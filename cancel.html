@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cancelar suscripción — PhotoPro</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23e8542f'/><circle cx='16' cy='12.5' r='5.5' fill='%23fff'/><path d='M6.5 29c1.2-5.2 5-8 9.5-8s8.3 2.8 9.5 8z' fill='%23fff'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="wrap nav">
+    <div class="logo"><span class="mark">P</span> PhotoPro <span class="logo-sub">studio</span></div>
+    <div class="links"><a href="dashboard.html" class="muted small">← Volver al estudio</a></div>
+  </div>
+</nav>
+
+<main class="cwrap" style="padding-top:44px">
+  <div class="cdots" id="cdots"></div>
+
+  <!-- PASO 1 -->
+  <div class="cstep card pad">
+    <h2 style="font-size:25px">¿Seguro que quieres cancelar?</h2>
+    <p>Al cancelar pierdes el acceso a tus <b>48 headshots</b>, tus fondos de estudio y a los nuevos estilos que añadimos cada semana.</p>
+    <div class="offer"><span>⏱</span><span>Oferta solo por hoy: <b>50% de descuento</b> en tu próximo período. <span class="timer" data-offer>04:59</span></span></div>
+    <div style="display:flex;gap:12px;justify-content:flex-end;margin-top:18px;flex-wrap:wrap">
+      <a href="dashboard.html" class="btn btn-green">Mantener mi plan Pro</a>
+      <button class="btn btn-ghost cbtn" data-to="1">Sí, cancelar</button>
+    </div>
+  </div>
+
+  <!-- PASO 2 -->
+  <div class="cstep card pad">
+    <h2 style="font-size:25px">Antes de irte, cuéntanos por qué</h2>
+    <p class="muted small">Tu respuesta nos ayuda a mejorar. (Opcional, pero de verdad nos importa)</p>
+    <div style="margin-top:16px">
+      <label class="radio"><input type="radio" name="why" checked> Es demasiado caro</label>
+      <label class="radio"><input type="radio" name="why"> Quería solo unas fotos, no una suscripción</label>
+      <label class="radio"><input type="radio" name="why"> Encontré otra herramienta</label>
+      <label class="radio"><input type="radio" name="why"> Estaba probando / ya no lo necesito</label>
+    </div>
+    <div style="display:flex;gap:12px;justify-content:flex-end;margin-top:18px;flex-wrap:wrap">
+      <button class="btn btn-ghost cbtn" data-to="0">← Atrás</button>
+      <button class="btn btn-primary cbtn" data-to="2">Continuar con la cancelación</button>
+    </div>
+  </div>
+
+  <!-- PASO 3 -->
+  <div class="cstep card pad">
+    <h2 style="font-size:25px">Espera, antes de que te vayas 🙌</h2>
+    <p>Como cliente Pro tienes derecho a <b>3 meses al 50%</b> (29,99 €/mes). Solo si te quedas hoy.</p>
+    <div class="offer"><span>🎁</span><span><b>29,99 €/mes</b> durante 3 meses en vez de 59,99 €. <span class="timer" data-offer>04:59</span></span></div>
+    <div style="display:flex;gap:12px;justify-content:flex-end;margin-top:18px;flex-wrap:wrap">
+      <button class="btn btn-ghost cbtn" data-to="1">← Atrás</button>
+      <a href="dashboard.html" class="btn btn-green">Sí, el 50% me interesa</a>
+      <button class="btn btn-red cbtn" data-to="3">No, sigo cancelando</button>
+    </div>
+  </div>
+
+  <!-- PASO 4 -->
+  <div class="cstep card pad">
+    <h2 style="font-size:25px">Confirmación final</h2>
+    <p>Tu plan <b>Pro</b> se cancela el <span data-trial>—</span>. Este es tu resumen:</p>
+    <div style="margin:14px 0">
+      <div class="sumrow"><span>Próximo cargo (hoy)</span><span class="ok">0,00 €</span></div>
+      <div class="sumrow"><span>Crédito por fidelidad</span><span class="ok">19,00 €</span></div>
+    </div>
+    <label class="check"><input type="checkbox" checked> Aplicar mi crédito de <b>19,00 €</b> para futuras compras en PhotoPro.</label>
+    <p class="small muted" style="margin-top:10px">Si cambias de opinión, puedes reactivar tu plan Pro en un clic.</p>
+    <div style="display:flex;gap:12px;justify-content:flex-end;margin-top:18px;flex-wrap:wrap">
+      <button class="btn btn-ghost cbtn" data-to="2">← Atrás</button>
+      <button class="btn btn-primary cbtn" data-to="end">Confirmar cancelación ✓</button>
+    </div>
+  </div>
+
+  <!-- FINAL -->
+  <div class="cstep card pad center">
+    <div style="font-size:52px">🎉</div>
+    <h2 style="font-size:26px">¡Listo, has cancelado!</h2>
+    <p class="muted">Te hemos enviado un correo de confirmación. Tu crédito de 19,00 € ya está aplicado a tu cuenta.</p>
+    <div style="display:flex;gap:12px;justify-content:center;margin-top:20px;flex-wrap:wrap">
+      <a href="billing.html" class="btn btn-ghost">Ver mi cuenta</a>
+      <a href="dashboard.html" class="btn btn-primary">Volver al estudio</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot-bottom" style="border-top:none">
+    <span>© 2026 PhotoPro Studio SL · NIF B-68245917</span>
+    <span>¿Cambiaste de opinión? <a href="dashboard.html">Reactivar mi plan</a></span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

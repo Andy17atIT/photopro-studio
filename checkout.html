@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PhotoPro — Empezar tu prueba gratis</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23e8542f'/><circle cx='16' cy='12.5' r='5.5' fill='%23fff'/><path d='M6.5 29c1.2-5.2 5-8 9.5-8s8.3 2.8 9.5 8z' fill='%23fff'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="wrap nav">
+    <div class="logo"><span class="mark">P</span> PhotoPro <span class="logo-sub">studio</span></div>
+    <div class="links"><a href="index.html" class="muted small">← Volver</a></div>
+  </div>
+</nav>
+
+<main class="wrap" style="padding-top:40px">
+  <span class="eyebrow">Último paso · 3 días gratis</span>
+  <h1>Empieza tu prueba gratis</h1>
+  <p class="lead">Completa tus datos de pago para desbloquear tu estudio de headshots. <b>No se te cobra hoy.</b></p>
+
+  <div class="co" style="margin-top:28px">
+    <form id="checkoutForm" class="card pad" novalidate>
+      <label>Nombre en la tarjeta</label>
+      <input id="cardName" type="text" placeholder="ANDY RIVERA" autocomplete="cc-name" required>
+
+      <label>Número de tarjeta</label>
+      <input id="cardNumber" inputmode="numeric" placeholder="4242 4242 4242 4242" autocomplete="cc-number" required>
+
+      <div class="row2">
+        <div>
+          <label>Vencimiento</label>
+          <input id="exp" inputmode="numeric" placeholder="MM/AA" autocomplete="cc-exp" required>
+        </div>
+        <div>
+          <label>CVV</label>
+          <input id="cvv" inputmode="numeric" placeholder="123" maxlength="4" autocomplete="cc-csc" required>
+        </div>
+      </div>
+
+      <label>Correo para entregar tus headshots</label>
+      <input type="email" placeholder="tu@correo.com" autocomplete="email">
+
+      <label class="check" style="margin-top:20px">
+        <input type="checkbox" id="autorenew" checked>
+        <span>Quiero activar el <b>plan Pro</b> después de mis 3 días gratis a <b>59,99 €/mes</b> (se renueva automáticamente; puedo cancelar desde mi cuenta cuando quiera).</span>
+      </label>
+
+      <button class="btn btn-primary btn-lg btn-block" style="margin-top:22px" type="submit">
+        Empezar mi prueba gratis →
+      </button>
+
+      <div class="payrow">
+        <span class="pay-badge visa">VISA</span>
+        <span class="pay-badge mc">MASTERCARD</span>
+        <span class="pay-badge amex">AMEX</span>
+        <span class="pay-badge pp">PAYPAL</span>
+        <span class="muted small" style="margin-left:auto">🔒 Pago cifrado SSL de 256 bits</span>
+      </div>
+      <p class="small muted" style="margin-top:12px">
+        Se te facturarán <b>59,99 €</b> el <span id="chargeDate">—</span>, al terminar tu prueba. Hasta entonces, no se te cobra nada.
+      </p>
+    </form>
+
+    <aside class="card pad summary">
+      <h3>Resumen del pedido</h3>
+      <div style="margin:10px 0">
+        <div class="sumrow"><span>PhotoPro · Pro</span><span class="muted">48 headshots</span></div>
+        <div class="sumrow"><span>Prueba gratis (3 días)</span><span class="ok">0,00 €</span></div>
+        <div class="sumrow"><span>Después de la prueba</span><span>59,99 €/mes</span></div>
+      </div>
+      <div class="offer"><span>🎁</span><span>Bono de bienvenida: al suscribirte hoy desbloqueas <b>10 estilos extra</b> de estudio.</span></div>
+      <p class="small muted">Cancela en cualquier momento desde tu cuenta. Tu primer cargo será el <span id="chargeDate2">—</span>.</p>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot-bottom" style="border-top:none">
+    <span>© 2026 PhotoPro Studio SL · Gran Vía 42, 3º 2ª · 28013 Madrid · NIF B-68245917</span>
+    <span><a href="#">Términos</a> · <a href="#">Privacidad</a> · <a href="#">Reembolsos</a></span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

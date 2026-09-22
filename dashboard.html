@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tu Estudio — PhotoPro</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23e8542f'/><circle cx='16' cy='12.5' r='5.5' fill='%23fff'/><path d='M6.5 29c1.2-5.2 5-8 9.5-8s8.3 2.8 9.5 8z' fill='%23fff'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="wrap nav">
+    <div class="logo"><span class="mark">P</span> PhotoPro <span class="logo-sub">studio</span>
+      <span class="tag" style="font-size:10px;font-weight:800;letter-spacing:.08em;background:var(--accent);color:#fff;padding:4px 9px;border-radius:6px;margin-left:8px">PRO</span>
+    </div>
+    <div class="links">
+      <a href="billing.html" class="muted small">Facturación</a>
+      <a href="cancel.html" class="danger small">Cancelar</a>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap" style="padding-top:32px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px">
+    <div>
+      <h1>Tu estudio de headshots</h1>
+      <p class="muted" style="margin:-6px 0 0">Sube una selfie o usa la demo. La IA genera tus variantes de estudio.</p>
+    </div>
+    <a href="#" id="downloadAll" class="btn btn-primary" style="display:none">⬇ Descargar mis 48 headshots (4K)</a>
+  </div>
+
+  <div class="ban">
+    <span>⏳ <b>Tu prueba gratis termina pronto</b> — se te facturará <b>59,99 €</b> el <span data-trial>—</span></span>
+    <a href="billing.html" class="btn btn-ghost" style="padding:9px 14px">Ver facturación</a>
+  </div>
+
+  <div class="tool">
+    <label class="file btn btn-ghost">📁 Subir mi selfie
+      <input id="fileInput" type="file" accept="image/*"></label>
+    <button id="demoBtn" class="btn btn-ghost">✨ Probar con foto de demo</button>
+    <span class="muted small">¿Sin foto? Usa la demo para ver cómo trabaja la IA.</span>
+  </div>
+
+  <div class="progress" id="progressWrap">
+    <div class="pbar"><div class="pfill" id="pfill"></div></div>
+    <div class="plabel"><span class="spin"></span> <span id="plabel">Preparando…</span></div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <p class="muted small" id="gridHint" style="margin-top:14px">Verás 6 de tus 48 headshots. <b>Descarga todo</b> para desbloquear las 48 en 4K.</p>
+</main>
+
+<footer>
+  <div class="wrap foot-bottom" style="border-top:none">
+    <span>© 2026 PhotoPro Studio SL · hola@photopro.ai</span>
+    <span><a href="billing.html">Facturación</a> · <a href="cancel.html">Cancelar</a></span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
